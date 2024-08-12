@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Division;
+use Illuminate\Http\Request;
 use App\Http\Response\BaseResponse;
+use Illuminate\Support\Facades\Auth;
 
 class DivisionController extends Controller
 {
