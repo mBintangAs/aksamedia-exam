@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DivisionController;
@@ -30,4 +31,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/employees/{id}', [EmployeeController::class, 'update']);
     Route::delete('/employees/{id}', [EmployeeController::class, 'destroy']);
 });
+
+Route::get('/nilairt', [Controller::class,'nilaiRt']);
+Route::get('/nilaist', [Controller::class,'nilaiSt']);
 
